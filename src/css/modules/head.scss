@@ -1,0 +1,16 @@
+
+#head{
+    $iH : 30px;
+    .head-nav{
+        height:$iH; 
+        background:#2e2828;
+        li{
+            float:left;
+            line-height: $iH;
+            margin-right:20px;
+        }
+    }
+    .head-logo{
+        img{ width:200px;}
+    }
+}

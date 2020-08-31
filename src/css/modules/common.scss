@@ -1,0 +1,16 @@
+
+
+*{margin:0; padding:0;}
+ul,ol{ list-style: none;}
+img{ display: block;}
+h1,h2,h3{ font-size : $defaultFontSize; }
+body{ font-size:$defaultFontSize; color:$defaultColor;}
+a{ color : $defaultColor;}
+
+.container{ width : $defaultContainer; margin:0 auto; position: relative;}
+.container-fluid{ width:100%; position: relative;}
+
+.clearfix::after{ content:""; clear:both; display: block;}
+.l{ float:left; }
+.r{ float:right; }
+

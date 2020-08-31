@@ -11,6 +11,42 @@
 <body>
     @include('head.html')
     @include('banner.html')
+
+    <div id="detail" class="container clearfix">
+        <!-- 放大镜 -->
+        <div class="detail_gallery l">
+            <div class="detail_gallery_normal">
+                <img src="../static/img/detail480.png" alt="">
+                <span></span>
+            </div>
+            <div class="detail_gallery_large">
+                <img src="../static/img/detail800.png" alt="">
+            </div>
+        </div>
+        <!-- 商品信息展示 -->
+        <div class="detail_message l">
+            <h2>HUAWEI Mate 30 麒麟990</h2>
+            <p>价 格 <span class="detail_message_price">¥4299.00</span></p>
+            <p>选择颜色 <span class="detail_message_box">亮黑色</span> <span class="detail_message_box">星河银</span> <span class="detail_message_box">翡冷翠</span></p>
+            <div class="detail_message_btn clearfix">
+                <div class="detail_message_num l">
+                    <input type="text" value="1">
+                    <span>+</span>
+                    <span>-</span>
+                </div>
+                <div class="detail_message_cart l"><a href="#">加入购物车</a></div>
+                <div class="detail_message_computed l"><a href="#">立即下单</a></div>
+            </div>
+        </div>
+    </div>
+    <!-- 商品的详情信息 -->
+    <div id="detailGoods" class="container-fluid">
+        <h3>-- 商品详情 --</h3>
+        <img src="../static/img/goods_detail.jpg" alt="">
+        <img src="../static/img/goods_detail2.jpg" alt="">
+    </div>
+
+
     @include('foot.html')
 </body>
 </html>

@@ -17,13 +17,28 @@ define(['jquery'],function($){
     function getPadData(){
         return $.ajax('/api/mock/pad.json');
     }
+    function getDetailData(type , id){
+        var promise = new Promise(function(resolve,reject){
+            $.ajax(`/api/mock/${type}.json`).then((res)=>{
+                //console.log(res);
+                for(var i=0;i<res.goods_list.length;i++){
+                    if( id == res.goods_list[i].goodsId){
+                        //res.goods_list[i];   //找到id对象的数据
+                        resolve(res.goods_list[i]);
+                    }
+                }
+            });
+        });
+        return promise;
+    }
 
     return {
         getBannerData,
         getBanner2Data,
         getPhoneData,
         getBookData,
-        getPadData
+        getPadData,
+        getDetailData
     };
 
 });

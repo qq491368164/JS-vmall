@@ -25,7 +25,13 @@ function webserverTask(){
                 host : 'localhost',
                 port : 4000,
                 open : './view/index.html',
-                livereload : true 
+                livereload : true,
+                proxies:[   //配置反向代理
+                    {
+                        source:'/api2',
+                        target:'http://localhost/api2'
+                    }
+                ]
             }));
 }
 

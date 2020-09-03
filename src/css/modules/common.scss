@@ -6,7 +6,7 @@ img{ display: block;}
 h1,h2,h3{ font-size : $defaultFontSize; }
 html{ overflow-x: hidden;}
 body{ font-size:$defaultFontSize; color:$defaultColor;}
-a{ color : $defaultColor;}
+a{ color : $defaultColor; text-decoration: none;}
 
 .container{ width : $defaultContainer; margin:0 auto; position: relative;}
 .container-fluid{ width:100%; position: relative;}

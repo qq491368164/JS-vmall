@@ -16,17 +16,17 @@
     ol{
         position: absolute;
         right:10px;
-        bottom: 10px;
+        bottom: 20px;
         z-index: 10;
         li{
-            width:20px;
-            height:20px;
+            width:14px;
+            height:14px;
             border-radius: 50%;
-            border:1px black solid;
+            border:.5px white solid;
             background:white;
             float:left;
             margin-right:10px;
-            &.active{ background:coral; }
+            &.active{ background:#282828; }
         }
     }
     .banner-mask{
@@ -38,4 +38,5 @@
         margin-left : -$imgWidth/2 + px;
         background:url(/static/img/bg-slide.png) center bottom no-repeat;
     }
+    
 }
